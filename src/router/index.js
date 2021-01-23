@@ -1,25 +1,41 @@
-// import { createRouter, createWebHistory } from 'vue-router'
-// import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '@/views/HomePage.vue';
+import CategoriesPage from '@/views/CategoriesPage.vue';
+import RegionalPage from '@/views/RegionalPage.vue';
 
-// const routes = [
-//   {
-//     path: '/',
-//     name: 'Home',
-//     component: Home
-//   },
-//   {
-//     path: '/about',
-//     name: 'About',
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-//   }
-// ]
+const routes = [
+	{
+		path: '/',
+		name: 'HomePage',
+		component: HomePage,
+	},
+	{
+		path: '/categories',
+		name: 'CategoriesPage',
+		component: CategoriesPage,
+	},
+	{
+		path: '/regional',
+		name: 'RegionalPage',
+		component: RegionalPage,
+	},
+];
 
-// const router = createRouter({
-//   history: createWebHistory(process.env.BASE_URL),
-//   routes
-// })
+const router = createRouter({
+	history: createWebHistory(process.env.BASE_URL),
+	routes,
+});
 
-// export default router
+router.beforeEach((to, from, next) => {
+	if (
+		to.name === 'HomePage' ||
+		to.name === 'CategoriesPage' ||
+		to.name === 'RegionalPage'
+	) {
+		next();
+	} else {
+		next({ path: '/' });
+	}
+});
+
+export default router;

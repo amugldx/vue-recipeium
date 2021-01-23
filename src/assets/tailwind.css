@@ -1,5 +1,13 @@
 @tailwind base;
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 @tailwind components;
 
 @tailwind utilities;
