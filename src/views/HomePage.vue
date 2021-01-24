@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="w-screen h-screen bg-bottom bg-cover text-w"
+		class="w-screen h-screen bg-bottom bg-cover text-w text-15 md:text-17 lg:text-18 2xl:text-20"
 		:style="backgroundImage"
 	>
 		<AppHeader />
