@@ -2,14 +2,21 @@
 	<div
 		class="flex flex-col items-center justify-center w-full h-screen space-y-7 bg-clrBlack"
 	>
-		<p class="font-bold text-26 text-clrWhite">Categories</p>
-		<p class="font-bold text-26 text-clrWhite">Regional</p>
+		<router-link
+			to="/categories"
+			class="font-bold text-26 md:text-40 lg:text-58 text-clrWhite"
+			>Categories</router-link
+		>
+		<router-link
+			to="/regional"
+			class="font-bold text-26 md:text-40 lg:text-58 text-clrWhite"
+			>Regional</router-link
+		>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'AppNavigation',
 		setup() {
 			return {};
 		},

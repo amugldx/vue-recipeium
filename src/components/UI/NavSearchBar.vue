@@ -6,7 +6,7 @@
 				class="w-full px-4 py-2 text-white bg-transparent border-b-2 outline-none w- text-15 border-clrWhite"
 				placeholder="search your recipe"
 			/>
-			<button class="absolute right-0 p-0 px-4 top-6 focus:outline-none">
+			<AppButton color="absolute right-0 p-0 px-4 top-6">
 				<div class="w-8 h-8 mr-8 cursor-pointer">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
 						<g>
@@ -19,14 +19,17 @@
 						<g>
 							<line class="st1" x1="24.5" y1="24.5" x2="34.5" y2="34.5" />
 						</g>
-					</svg> </div
-			></button>
+					</svg>
+				</div>
+			</AppButton>
 		</div>
 	</div>
 </template>
 
 <script>
+	import AppButton from './AppButton.vue';
 	export default {
+		components: { AppButton },
 		name: 'NavSearchBar',
 		setup() {
 			return {};

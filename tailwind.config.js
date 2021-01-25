@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				header: ['Montserrat Alternates'],
+				header: ['IBM Plex Serif'],
 			},
 			screens: {
 				sm: '640px',
@@ -12,6 +12,12 @@ module.exports = {
 				lg: '1024px',
 				xl: '1280px',
 				'2xl': '1536px',
+			},
+			boxShadow: {
+				cardLg:
+					'8px 8px 20px 0 rgba(0, 0, 0, 0.20), -8px -8px 20px 0 rgba(0, 0, 0, 0.20)',
+				card:
+					'4px 4px 10px 0 rgba(0,0,0,0.15), -4px -4px 10px 0 rgba(0,0,0,0.15)',
 			},
 			colors: {
 				clrRed: '#EB3510',
@@ -42,6 +48,14 @@ module.exports = {
 				'100': '10rem',
 				'120': '12rem',
 				'150': '15rem',
+				'250': '25rem',
+				'300': '30rem',
+				'400': '40rem',
+				'450': '45rem',
+				'500': '50rem',
+				'550': '55rem',
+				'600': '60rem',
+				'700': '70rem',
 			},
 			fontSize: {
 				10: '1rem',
@@ -61,6 +75,7 @@ module.exports = {
 				32: '3.2rem',
 				40: '4rem',
 				48: '4.8rem',
+				58: '5.8rem',
 			},
 		},
 	},
