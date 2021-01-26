@@ -5,7 +5,6 @@
 		<div class="mb-4 space-x-6 font-bold md:mb-6 lg:mb-9">
 			<router-link to="/">HOME</router-link>
 			<router-link to="/categories">CATEGORIES</router-link>
-			<router-link to="/regional">REGIONAL</router-link>
 		</div>
 		<p class="font-light">Designed and developed by Ammar Mughal</p>
 	</div>

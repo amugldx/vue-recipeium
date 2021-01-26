@@ -12,11 +12,20 @@
 				>We generate random recipe on every page reload or you can generate one
 				now.</p
 			>
-			<AppButton class="mt-12 mb-50 lg:mt-24" color="bg-clrRed text-clrWhite"
+			<AppButton
+				@click="$emit('random-meal')"
+				class="mt-12 mb-50 lg:mt-24"
+				color="bg-clrRed text-clrWhite"
 				>Generate New Recipe</AppButton
 			>
 		</div>
-		<AppCard />
+		<AppCard
+			:mealName="mealName"
+			:mealOrigin="mealOrigin"
+			:mealThumb="mealThumb"
+			goTo="/details"
+			@card-btn-clicked="$emit('card-details')"
+		/>
 	</div>
 </template>
 
@@ -26,6 +35,7 @@
 
 	export default {
 		components: { AppCard, AppButton },
+		props: ['mealName', 'mealOrigin', 'mealThumb'],
 		setup() {
 			return {};
 		},

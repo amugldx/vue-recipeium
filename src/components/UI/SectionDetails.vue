@@ -1,6 +1,6 @@
 <template>
 	<div>
-		RegionalPage
+		Section Details
 	</div>
 </template>
 

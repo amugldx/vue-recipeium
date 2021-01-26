@@ -7,11 +7,6 @@
 			class="font-bold text-26 md:text-40 lg:text-58 text-clrWhite"
 			>Categories</router-link
 		>
-		<router-link
-			to="/regional"
-			class="font-bold text-26 md:text-40 lg:text-58 text-clrWhite"
-			>Regional</router-link
-		>
 	</div>
 </template>
 

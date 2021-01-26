@@ -3,8 +3,10 @@
 		<div
 			class="z-20 flex items-center justify-between py-4 bg-clrBlack px-9 md:px-16 lg:px-50 "
 		>
-			<div class="text-clrWhite text-26 font-header md:text-32 lg:text-40"
-				>Recipeium</div
+			<router-link
+				to="/"
+				class="text-clrWhite text-26 font-header md:text-32 lg:text-40"
+				>Recipeium</router-link
 			>
 			<div
 				@click="toggleNav"

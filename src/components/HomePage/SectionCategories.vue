@@ -18,7 +18,9 @@
 				>Browse through different categories of food we have added for you to
 				enjoy.</p
 			>
-			<AppButton color="bg-clrBlack text-clrWhite">All Categories</AppButton>
+			<AppButton to="/categories" color="bg-clrBlack text-clrWhite"
+				>All Categories</AppButton
+			>
 		</div>
 	</div>
 </template>

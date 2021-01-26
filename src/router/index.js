@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '@/views/HomePage.vue';
 import CategoriesPage from '@/views/CategoriesPage.vue';
-import RegionalPage from '@/views/RegionalPage.vue';
 
 const routes = [
 	{
@@ -14,24 +13,18 @@ const routes = [
 		name: 'CategoriesPage',
 		component: CategoriesPage,
 	},
-	{
-		path: '/regional',
-		name: 'RegionalPage',
-		component: RegionalPage,
-	},
 ];
 
 const router = createRouter({
 	history: createWebHistory(process.env.BASE_URL),
 	routes,
+	scrollBehavior() {
+		return { x: 0, y: 0 };
+	},
 });
 
 router.beforeEach((to, from, next) => {
-	if (
-		to.name === 'HomePage' ||
-		to.name === 'CategoriesPage' ||
-		to.name === 'RegionalPage'
-	) {
+	if (to.name === 'HomePage' || to.name === 'CategoriesPage') {
 		next();
 	} else {
 		next({ path: '/' });
