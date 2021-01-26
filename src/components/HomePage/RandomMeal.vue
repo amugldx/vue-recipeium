@@ -25,7 +25,8 @@
 			:mealThumb="mealThumb"
 			goTo="/details"
 			@card-btn-clicked="$emit('card-details')"
-		/>
+			>View Recipe</AppCard
+		>
 	</div>
 </template>
 

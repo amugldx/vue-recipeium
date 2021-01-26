@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex flex-col items-center justify-center text-center px-50 md:px-80 lg:px-200 lg:py-200 md:py-100 bg-clrGray-light py-80"
+		class="flex flex-col items-center justify-center text-center px-50 md:px-80 lg:px-200 lg:py-200 md:py-100 2xl:px-300 bg-clrGray-light py-80"
 	>
 		<img
 			class="p-6 w-250 lg:w-400 md:w-300 bg-clrWhite shadow-cardLg"

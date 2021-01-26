@@ -9,8 +9,8 @@
 			class="mt-6 mb-4"
 			@btn-clicked="$emit('card-btn-clicked')"
 			color="bg-clrBlack text-clrWhite"
-			>View Recipe</AppButton
-		>
+			><slot
+		/></AppButton>
 	</div>
 </template>
 

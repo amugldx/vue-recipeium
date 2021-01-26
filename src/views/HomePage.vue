@@ -40,10 +40,10 @@
 
 <script>
 	import { ref } from 'vue';
+	import randomMeal from '@/hooks/randomMeal.js';
 	import AppHeader from '@/components/UI/AppHeader';
 	import RandomMeal from '../components/HomePage/RandomMeal.vue';
 	import SectionCategories from '../components/HomePage/SectionCategories.vue';
-	import axios from '@/axios';
 	import RecipeDetails from './RecipeDetails.vue';
 
 	export default {
@@ -57,28 +57,22 @@
 			const backgroundImage = {
 				backgroundImage: `url(${require('@/assets/images/homepage/homepage-hero.svg')})`,
 			};
-			const mealName = ref('');
-			const mealOrigin = ref('');
-			const mealThumb = ref('');
-			const mealCategory = ref('');
-			const mealInstructions = ref('');
-			const mealLink = ref('');
-
-			const getRandomMeal = async () => {
-				const response = await axios.get('random.php');
-				console.log(response);
-				mealName.value = response.data.meals[0].strMeal;
-				mealOrigin.value = response.data.meals[0].strArea;
-				mealThumb.value = response.data.meals[0].strMealThumb;
-				mealCategory.value = response.data.meals[0].strCategory;
-				mealInstructions.value = response.data.meals[0].strInstructions;
-				mealLink.value = response.data.meals[0].strYoutube;
-			};
 
 			const viewDetals = ref(true);
 			const detailsView = () => {
 				viewDetals.value = !viewDetals.value;
 			};
+
+			const {
+				mealCategory,
+				mealLink,
+				mealInstructions,
+				getRandomMeal,
+				mealName,
+				mealOrigin,
+				mealThumb,
+			} = randomMeal();
+
 			getRandomMeal();
 			return {
 				backgroundImage,

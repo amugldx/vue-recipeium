@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="text-center text-15 md:text-17 lg:text-18 2xl:text-20 text-clrBlack bg-clrGray"
+		class="text-center pb-100 lg:pb-150 2xl:pb-200 text-15 md:text-17 lg:text-18 2xl:text-20 text-clrBlack bg-clrGray"
 	>
 		<div class="w-screen h-screen bg-bottom bg-cover" :style="backgroundImage">
 			<AppHeader />
