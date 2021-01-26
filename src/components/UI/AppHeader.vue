@@ -1,7 +1,7 @@
 <template>
 	<div class="fixed flex flex-col w-full">
 		<div
-			class="z-20 flex items-center justify-between py-4 bg-clrBlack px-9 md:px-16 lg:px-50 "
+			class="z-20 flex items-center justify-between py-4 bg-clrBlack px-9 md:px-50 lg:px-70 2xl:px-100 "
 		>
 			<router-link
 				to="/"
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		<div v-if="navToggleValue" class="absolute top-0 left-0 w-full h-full">
-			<AppNavigation />
+			<AppNavigation @close-nav="toggleNav" />
 		</div>
 	</div>
 </template>
