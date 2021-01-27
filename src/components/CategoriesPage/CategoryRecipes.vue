@@ -32,7 +32,7 @@
 		</div>
 		<AppButton
 			class="mt-16 lg:mt-100"
-			color="bg-clrRed text-clrWhite"
+			color="bg-clrRed text-clrWhite hover:bg-clrBlack transition transition-all"
 			@btn-clicked="$emit('go-back')"
 			>Back</AppButton
 		>

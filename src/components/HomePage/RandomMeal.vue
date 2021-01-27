@@ -22,7 +22,7 @@
 			<AppButton
 				@click="$emit('random-meal')"
 				class="mt-12 mb-50 lg:mt-24"
-				color="bg-clrRed text-clrWhite"
+				color="bg-clrRed text-clrWhite hover:bg-clrBlack transition transition-all"
 				>Generate New Recipe</AppButton
 			>
 		</div>

@@ -14,7 +14,7 @@
 			><b>INSTRUCTIONS</b><br />{{ mealInstructions }}</p
 		>
 		<p
-			class="mt-4 font-bold underline cursor-pointer md:mt-8 text-17 md:text-20 lg:text-24 lg:mt-12"
+			class="mt-4 font-bold underline transition cursor-pointer hover:text-clrRed md:mt-8 text-17 md:text-20 lg:text-24 lg:mt-12"
 		>
 			<a target="_blank" rel="noopener noreferrer" :href="mealLink"
 				>Watch on youtube</a
@@ -23,7 +23,7 @@
 		<AppButton
 			@btn-clicked="$emit('close-recipe')"
 			class="self-end mt-16"
-			color="bg-clrBlack text-clrWhite"
+			color="bg-clrBlack text-clrWhite hover:bg-clrRed transition transition-all"
 			>Close</AppButton
 		>
 	</div>
