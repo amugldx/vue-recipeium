@@ -4,6 +4,10 @@
 		v-if="recipeToggle"
 	>
 		<div
+			data-aos-duration="1000"
+			data-aos-delay="200"
+			data-aos-once="true"
+			data-aos="fade-down"
 			class="flex flex-col items-center justify-center p-6 lg:mt-150 mt-70 w-250 lg:w-400 lg:h-400 md:w-300 md:h-300 bg-clrWhite shadow-cardLg "
 		>
 			<img :src="categoryThumb" :alt="categoryName" />
@@ -17,6 +21,9 @@
 					:mealName="meal.mealName"
 					:mealThumb="meal.mealThumb"
 					:mealId="meal.mealId"
+					data-aos-duration="1000"
+					data-aos-delay="200"
+					data-aos="fade"
 					class="mt-16 cursor-pointer lg:m-50"
 					@click="recipeDetails()"
 					@data="recivedData"

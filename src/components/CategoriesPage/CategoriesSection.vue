@@ -13,6 +13,9 @@
 				class="mt-16 lg:m-50"
 				:mealThumb="category.categoryThumb"
 				:mealName="category.categoryName"
+				data-aos-duration="1000"
+				data-aos-delay="200"
+				data-aos="fade"
 				@card-btn-clicked="
 					viewAllItems(category.categoryName, category.categoryThumb)
 				"

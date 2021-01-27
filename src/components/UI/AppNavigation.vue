@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex flex-col items-center justify-center w-full h-screen space-y-7 bg-clrBlack"
+		class="z-50 flex flex-col items-center justify-center w-full h-screen space-y-7 bg-clrBlack"
 		@click="$emit('close-nav')"
 	>
 		<router-link

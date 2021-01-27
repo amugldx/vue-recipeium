@@ -1,15 +1,27 @@
 <template>
 	<div class="text-15 md:text-17 lg:text-18 2xl:text-20 text-clrBlack">
 		<div class="w-screen h-screen bg-bottom bg-cover" :style="backgroundImage">
-			<AppHeader />
+			<AppHeader
+				data-aos-duration="1000"
+				data-aos-delay="200"
+				data-aos-once="true"
+				data-aos="slide-down"
+			/>
 			<div
 				class="flex flex-col items-center justify-center w-full h-full space-y-6 "
 			>
 				<h1
-					class="px-8 font-bold text-center text-20 md:text-26 lg:text-40 text-clrWhite"
+					class="z-0 px-8 font-bold text-center text-20 md:text-26 lg:text-40 text-clrWhite"
+					data-aos-duration="1000"
+					data-aos-delay="500"
+					data-aos="fade-down"
 					>LET'S CREATE SOMETHING DELICIOUS</h1
 				>
-				<h2 class="px-24 font-light text-center text-clrWhite"
+				<h2
+					class="z-0 px-24 font-light text-center text-clrWhite"
+					data-aos-duration="1000"
+					data-aos-delay="500"
+					data-aos="fade-up"
 					>We got great recipes for you to cook today</h2
 				>
 			</div>
